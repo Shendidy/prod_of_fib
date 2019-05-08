@@ -1,8 +1,13 @@
 class Product_Fib
 
   def productFib(prod)
-    [55, 89, true]
+    # [55, 89, true]
+    pro_fib(prod)[0] * pro_fib(prod)[1] == prod ? 
+      [pro_fib(prod)[0], pro_fib(prod)[1], true] :
+      [pro_fib(prod)[0], pro_fib(prod)[1], false]
   end
+
+  private
 
   def pro_fib(prod)
     ind = 0
